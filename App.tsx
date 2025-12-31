@@ -55,14 +55,6 @@ const App: React.FC = () => {
     return { passed, total: TIMEZONES.length, next };
   }, [now]);
 
-  const triggerManualCelebration = () => {
-    setCelebratingZone('manual');
-    setCelebrationTitle("The World is Celebrating!");
-    // Randomly pick a timezone's colors or use rainbow for manual
-    const randomTz = TIMEZONES[Math.floor(Math.random() * TIMEZONES.length)];
-    setCelebratingColors(randomTz.colors);
-  };
-
   return (
     <div className="min-h-screen pb-20 relative overflow-hidden">
       {/* Dynamic Background */}
