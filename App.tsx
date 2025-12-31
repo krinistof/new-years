@@ -147,15 +147,6 @@ const App: React.FC = () => {
                 <h2 className="text-3xl font-display text-white uppercase tracking-wider">The Timeline</h2>
                 <div className="hidden sm:block h-px w-32 bg-gradient-to-r from-slate-700 to-transparent" />
              </div>
-             <button 
-                onClick={triggerManualCelebration}
-                className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/10 rounded-2xl text-white font-bold transition-all hover:scale-105 active:scale-95 shadow-lg group"
-             >
-               <span className="text-yellow-400 group-hover:animate-spin">
-                 <IconSparkle />
-               </span>
-               Manual Celebration
-             </button>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
